@@ -17,33 +17,37 @@ console.log('JS OK');
 
 // ! Raccolta Dati
 //*Stampare numeri da 1 a 100;
+//*Per i numeri che non sono multipli di 3 e 5 , stampa il numero;
+//*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz al posto del numero;
 //*Stampare Fizz al posto del numero quando multiplo di 3;
-//*Stampare Buzz per i multipli di 5;
-//*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz;
+//*Stampare Fizz al posto del numero quando multiplo di 5;
 
 // ! Elaborazione
 
 //*Stampare numeri da 1 a 100;
 let i
-
 for(i=1;i<=100;i=i+1 ) 
 {
+    //*Per i numeri che non sono multipli di 3 e 5 , stampa il numero;
     if (i % 3 != 0 && i % 5 != 0) {
         console.log(i);
     }
-//*Stampare Fizz al posto del numero quando multiplo di 3;
-if (i % 3 === 0) {
-    console.log( " Fizz");
-}
-//*Stampare Buzz per i multipli di 5;
-if (i % 5 === 0) {
-    console.log( " Buzz");
-}
-//*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz;
+    //*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz al posto del numero;
+    else if (i % 3 === 0 && i % 5 === 0) {
+        console.log( " FizzBuzz");
+    }
 
-if (i % 3 === 0 && i % 5 === 0) {
-    console.log( " FizzBuzz");
+    //*Stampare Fizz al posto del numero quando multiplo di 3;
+    else if (i % 3 === 0) {
+        console.log( " Fizz");
+    }
+
+    //*Stampare Fizz al posto del numero quando multiplo di 5;
+    else if (i % 5 === 0) {
+        console.log( " Buzz");
+    }
 }
 
-}
+
+
 
