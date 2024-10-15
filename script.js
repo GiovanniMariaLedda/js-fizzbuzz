@@ -17,11 +17,14 @@ console.log('JS OK');
 
 // ! Raccolta Dati
 //*Stampare numeri da 1 a 100;
-const numbers = 100;
-for (let i = numbers; i >= 0; i++ ){
-    console.log(`Ripetizione ${i + 1}: indice ${i}`);
-}
+let i
+
+for(i=1;i<=100;i=i+1 ) 
+{
+  console.log(i)
+
 //*Stampare Fizz al posto del numero quando multiplo di 3;
+
 //*Stampare Buzz per i multipli di 5;
 //*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz;
 
