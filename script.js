@@ -20,6 +20,7 @@ console.log('JS OK');
 //*Stampare Fizz al posto del numero quando multiplo di 3;
 //*Stampare Buzz per i multipli di 5;
 //*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz;
+
 // ! Elaborazione
 
 //*Stampare numeri da 1 a 100;
@@ -27,17 +28,22 @@ let i
 
 for(i=1;i<=100;i=i+1 ) 
 {
-console.log(i)
+    if (i % 3 != 0 && i % 5 != 0) {
+        console.log(i);
+    }
 //*Stampare Fizz al posto del numero quando multiplo di 3;
 if (i % 3 === 0) {
-    console.log(i + " fizz");
+    console.log( " Fizz");
 }
 //*Stampare Buzz per i multipli di 5;
 if (i % 5 === 0) {
-    console.log(i + " Buzz");
+    console.log( " Buzz");
 }
 //*Per i numeri che sono sia multipli di 3 che di 5 stampa FizzBuzz;
+
+if (i % 3 === 0 && i % 5 === 0) {
+    console.log( " FizzBuzz");
 }
 
+}
 
-// ! Output
